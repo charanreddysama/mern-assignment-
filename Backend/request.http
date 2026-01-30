@@ -1,0 +1,69 @@
+GET http://localhost:3000/user-api/users
+
+###
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "id":105,
+    "name":"sampath",
+    "age":19
+}
+
+###
+PUT http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "id":105,
+    "name":"kumar",
+    "age":11
+}
+
+###
+DELETE http://localhost:3000/user-api/users/105
+
+
+###
+GET http://localhost:3000/user-api/users/105
+
+
+
+
+
+
+
+###
+GET http://localhost:3000/product-api/products
+
+###
+GET http://localhost:3000/product-api/products/product-id/101
+
+###
+GET http://localhost:3000/product-api/products/product-brand/padmavathi
+
+###
+POST http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "productId":101,
+    "name":"book",
+    "price":150,
+    "brand":"padmavathi"
+}
+
+
+###
+PUT http://localhost:3000/product-api/products/100
+Content-Type: application/json
+
+{
+    "productId":101,
+    "name":"book",
+    "price":200,
+    "brand":"padmavathi"
+}
+
+###
+DELETE http://localhost:3000/product-api/products/101
