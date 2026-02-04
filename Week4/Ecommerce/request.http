@@ -1,0 +1,39 @@
+﻿
+### get all users
+GET http://localhost:4000/users-api/users
+
+
+### Get user by id (populated cart)
+GET http://localhost:4000/users-api/users/698389679a4d0df73c4a606f
+
+
+### Create user
+POST http://localhost:4000/users-api/users
+Content-Type: application/json
+
+{
+  "name": "charan",
+  "email": "charanreddysama@gmail.com",
+  "password": "charan",
+  "cart": []
+}
+
+### get all products
+GET http://localhost:4000/products-api/products
+
+
+### Create product
+POST http://localhost:4000/products-api/products
+Content-Type: application/json
+
+{
+  "productName": "phone",
+  "price": 50000,
+  "brand": "mi"
+}
+
+### Add product to user's cart (PUT)
+PUT http://localhost:4000/users-api/users/698389679a4d0df73c4a606f/cart/6983899f9a4d0df73c4a6071
+
+
+
