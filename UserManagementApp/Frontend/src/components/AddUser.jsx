@@ -20,7 +20,8 @@ function AddUser() {
     setLoading(true);
     // make HTTP POST req to create new user
     try {
-      let res = await fetch("http://localhost:4000/user-api/user", {
+      // let res = await fetch("http://localhost:4000/user-api/user", {
+      let res = await fetch("https://usermanagement-backend-kmz3.onrender.com/user-api/user", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

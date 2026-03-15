@@ -8,7 +8,7 @@ function UserList() {
   useEffect(() => {
     async function getUsers() {
       try {
-        let res = await fetch("http://https://usermanagement-backend-kmz3.onrender.com", {
+        let res = await fetch("https://usermanagement-backend-kmz3.onrender.com/user-api/user", {
         // let res = await fetch("  http://localhost:4000/user-api/user", {
           method: "GET",
         });
