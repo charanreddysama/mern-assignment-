@@ -5,9 +5,9 @@ function Header() {
   return (
     <div className="flex justify-between items-center px-15 bg-mist-400 ">
           <img 
-        className="py-2 rounded-[50%] border bg-emerald-50"
+        className="py-2 rounded-[50%]"
         width="80px" 
-        src="https://www.iconpacks.net/icons/1/free-user-group-icon-296-thumb.png"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC0jsFAMxrbbUCu8JLInBw5kX6mBREXhWJyw&s"
         alt="logo"
       />
       <nav>

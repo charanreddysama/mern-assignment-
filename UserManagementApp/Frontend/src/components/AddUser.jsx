@@ -53,7 +53,7 @@ function AddUser() {
 
   return (
     <div className="text-center">
-      <h1 className="text-5xl text-gray-600">Add New User</h1>
+      <h1 className="text-4xl text-gray-600 font-bold">Add New User</h1>
       {/* Create user form */}
       <form onSubmit={handleSubmit(onUserCreate)} className="max-w-96 mx-auto mt-10">
         <input type="text" {...register("name")} className="mb-5 border w-full text-2xl" placeholder="Name" />
@@ -61,7 +61,7 @@ function AddUser() {
         <input
           type="date"
           {...register("dateOfBirth")}
-          className="mb-5 border w-full text-2xl"
+          className="mb-5 border w-full text-2xl text-gray-600"
           placeholder="Date of birth"
         />
         <input

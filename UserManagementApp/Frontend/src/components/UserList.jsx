@@ -8,7 +8,8 @@ function UserList() {
   useEffect(() => {
     async function getUsers() {
       try {
-        let res = await fetch("http://localhost:4000/user-api/user", {
+        let res = await fetch("http://https://usermanagement-backend-kmz3.onrender.com", {
+        // let res = await fetch("  http://localhost:4000/user-api/user", {
           method: "GET",
         });
 
@@ -35,17 +36,18 @@ function UserList() {
 
   return (
     <div>
-      <h1 className="text-5xl text-gray-600">List of Users</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+      <h1 className="text-4xl text-center font-bold text-gray-600">List of Users</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 p-10">
         {users?.map((userObj) => (
           <div key={userObj.email} className="p-10 shadow-2xl cursor-pointer" onClick={()=>gotoUser(userObj)}>
-            <p className="text-3xl">{userObj.name}</p>
-            <p className="text-2xl">{userObj.email}</p>
+            <p className="text-2xl ">{userObj.name}</p>
+            <p className="text-1xl ">{userObj.email}</p>
           </div>
         ))}
       </div>
     </div>
   );
 }
+
 
 export default UserList;
